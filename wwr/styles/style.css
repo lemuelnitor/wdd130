@@ -1,4 +1,23 @@
-body,
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+
+:root {
+    --heading-font: 'Signika Negative', serif, Arial;
+    --paragraph-font: 'Lato', sans-serif, Helvetica;
+}
+
+body {
+    background-color: #6FB3BB;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
 header {
     background-color: #6FB3BB;
 }
@@ -8,11 +27,27 @@ header {
     margin: 0 auto;
 }
 
-#hero-msg h1, 
+#logo_link {
+    padding-top: 5px;
+}
+
+#hero-msg h1,
 #hero-msg h4,
 .button-box,
 main section {
     text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #BADFE7;
 }
 
 #background {
@@ -25,21 +60,38 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: #C2EDCE;
+    padding: 35px;
 }
 
-footer a {
-    color: #C2EDCE;
-}
-
-nav,
-.msg,
-footer {
+nav{
     background-color: #388087;
     color: #C2EDCE;
 }
 
+.msg {
+    background-color: #388087;
+    color: #C2EDCE;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.msg h2 {
+    font-family: var(--heading-font);
+}
+
+.home-title {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 nav a:hover,
-.book:hover, 
+.book:hover,
 .join:hover {
     background-color: #BADFE7;
     color: #6FB3BB;
@@ -50,17 +102,30 @@ nav a:hover,
     background-color: #388087;
     color: #C2EDCE;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
-footer a
-{
-    text-decoration: none;
-}
-
-.logo,
-.icon
-{
+.logo {
     width: 80px;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #388087;
+    color: #C2EDCE;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 footer p {
@@ -69,4 +134,9 @@ footer p {
 
 footer p a:hover {
     text-decoration: underline;
+    color: #C2EDCE;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
